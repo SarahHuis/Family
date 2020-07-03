@@ -1,33 +1,25 @@
 def add_element_dict(dict, element):
-    if any(dict) is False:
-        dict[1] = element
-    else:
         for i in element:
             dict[len(dict)+1] = i
 
-class Node:
-    def __init__(self, data, child, parent): # Data is the name of the person
-        self.data = data
-        self.child = child
-        self.parent = parent
+def create_node(name, child, parent):
+    node = {"name":name, "child":child, "parent":parent}
+    return node
 
-    def __repr__(self):
-        return self.data
+def add_to_tree(tree, node):
+    tree[len(tree)+1] = node
 
+    
+# Example
+child = dict()
+add_element_dict(child, ['John', "Patrick", "Jane", "Shepard"])
+print(child)
+parent = dict()
+add_element_dict(parent, ["P1", "P2", "P3"])
+print(parent)
+node = {"name":"Mr Fuzzyboots", "child": child, "parent": parent}
+print(node)
+print(node["name"])
+print(node["child"])
+print(node["parent"])
 
-
-""">>> llist = LinkedList()
->>> llist
-None
-
->>> first_node = Node("a")
->>> llist.head = first_node
->>> llist
-a -> None
-
->>> second_node = Node("b")
->>> third_node = Node("c")
->>> first_node.next = second_node
->>> second_node.next = third_node
->>> llist
-a -> b -> c -> None"""
