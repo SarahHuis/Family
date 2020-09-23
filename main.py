@@ -13,16 +13,16 @@ def add_to_tree(tree, node):
 
 def handle_click():
     #if text_Name.get("1.0","end-1c") and text_Parent.get("1.0","end-1c") and text_Child.get("1.0","end-1c") is None:
-    entry = create_node(text_Name.get("1.0","end-1c"), text_Child.get("1.0","end-1c"), text_Parent.get("1.0","end-1c"))
+    entry = create_node(text_Name.get("1.0","end-1c"), text_Child.get("1.0","end-1c").split('\n'), \
+    text_Parent.get("1.0","end-1c").split('\n'))
     print(entry)
+    add_to_tree(tree, entry)
+
+
+
 
 window = tk.Tk()
-add_node_button = tk.Button(
-    text = "New Person",
-    width = 15,
-    height = 3,
-    command = handle_click
-)
+tree = dict()
 
 label_Name = tk.Label(text="Name")
 text_Name = tk.Text()
@@ -31,6 +31,12 @@ text_Child = tk.Text()
 label_Parent = tk.Label(text="Parents")
 text_Parent = tk.Text()
 
+add_node_button = tk.Button(
+    text = "New Person",
+    width = 15,
+    height = 3,
+    command = handle_click
+)
 
 add_node_button.pack()
 label_Name.pack()
@@ -46,6 +52,7 @@ text_Parent.pack()
 
 #add_node_button.bind("<Button-1>", handle_click())
 
+print(tree)
 
 window.mainloop()
 
@@ -81,17 +88,16 @@ window.mainloop()
 
 
 
-
 # Example
-child = dict()
-add_element_dict(child, ["John", "Patrick", "Jane", "Shepard"])
-print(child)
-parent = dict()
-add_element_dict(parent, ["P1", "P2", "P3"])
-print(parent)
-node = {"name":"Mr Fuzzyboots", "child": child, "parent": parent}
-print(node)
-print(node["name"])
-print(node["child"])
-print(node["parent"])
+# child = dict()
+# add_element_dict(child, ["John", "Patrick", "Jane", "Shepard"])
+# print(child)
+# parent = dict()
+# add_element_dict(parent, ["P1", "P2", "P3"])
+# print(parent)
+# node = {"name":"Mr Fuzzyboots", "child": child, "parent": parent}
+# print(node)
+# print(node["name"])
+# print(node["child"])
+# print(node["parent"])
 #create_node("Sansa Whiter")

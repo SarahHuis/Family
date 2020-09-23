@@ -10,8 +10,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef30bb07-b5b4-4dcf-8ede-10d908406d86" name="Default Changelist" comment="Functions to create node and add the node to the tree">
-      <change afterPath="$PROJECT_DIR$/Test.py" afterDir="false" />
+    <list default="true" id="ef30bb07-b5b4-4dcf-8ede-10d908406d86" name="Default Changelist" comment="Created Gui for text input to create Node">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -126,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593777372109</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Created Gui for text input to create Node">
+      <created>1600897304104</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1600897304104</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -146,7 +152,8 @@
     <MESSAGE value="Added User name" />
     <MESSAGE value="Created Node class and adding elements to dictionary function" />
     <MESSAGE value="Functions to create node and add the node to the tree" />
-    <option name="LAST_COMMIT_MESSAGE" value="Functions to create node and add the node to the tree" />
+    <MESSAGE value="Created Gui for text input to create Node" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created Gui for text input to create Node" />
   </component>
   <component name="WindowStateProjectService">
     <state x="726" y="254" width="530" height="605" key="FileChooserDialogImpl" timestamp="1593785533704">
@@ -201,10 +208,10 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="826" y="415" width="330" height="284" key="VCS.EditChangelistDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1593785475548" />
-    <state x="491" y="226" width="1000" height="661" key="Vcs.Push.Dialog.v2" timestamp="1593775447520">
+    <state x="491" y="226" width="1000" height="661" key="Vcs.Push.Dialog.v2" timestamp="1600897535302">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="491" y="226" width="1000" height="661" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1593775447520" />
+    <state x="491" y="226" width="1000" height="661" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1600897535302" />
     <state x="722" y="451" width="591" height="219" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600895647438">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
