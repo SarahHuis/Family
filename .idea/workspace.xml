@@ -10,10 +10,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef30bb07-b5b4-4dcf-8ede-10d908406d86" name="Default Changelist" comment="Added User name">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graph.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Family.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Family.iml" afterDir="false" />
+    <list default="true" id="ef30bb07-b5b4-4dcf-8ede-10d908406d86" name="Default Changelist" comment="Functions to create node and add the node to the tree">
+      <change afterPath="$PROJECT_DIR$/Test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -21,6 +19,13 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -37,9 +42,31 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.main">
+    <configuration name="Test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Family" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Family" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -61,10 +88,12 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.Test" />
         <item itemvalue="Python.main" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -83,7 +112,21 @@
       <option name="project" value="LOCAL" />
       <updated>1593767216707</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Created Node class and adding elements to dictionary function">
+      <created>1593775188859</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1593775188859</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Functions to create node and add the node to the tree">
+      <created>1593777372109</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1593777372109</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -101,9 +144,15 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Added User name" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added User name" />
+    <MESSAGE value="Created Node class and adding elements to dictionary function" />
+    <MESSAGE value="Functions to create node and add the node to the tree" />
+    <option name="LAST_COMMIT_MESSAGE" value="Functions to create node and add the node to the tree" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="726" y="254" width="530" height="605" key="FileChooserDialogImpl" timestamp="1593785533704">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="726" y="254" width="530" height="605" key="FileChooserDialogImpl/72.27.1848.1053@72.27.1848.1053" timestamp="1593785533704" />
     <state x="828" y="432" width="336" height="250" key="Github.ShareDialog" timestamp="1593767634336">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
@@ -112,30 +161,54 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="775" y="196" width="431" height="722" key="Github.UntrackedFilesDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1593767095945" />
-    <state width="1818" height="259" key="GridCell.Tab.0.bottom" timestamp="1593772014824">
+    <state width="1818" height="322" key="GridCell.Tab.0.bottom" timestamp="1600895725198">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1818" height="259" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1593772014824" />
-    <state width="1818" height="259" key="GridCell.Tab.0.center" timestamp="1593772014824">
+    <state width="1818" height="322" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1600895725198" />
+    <state width="1818" height="322" key="GridCell.Tab.0.center" timestamp="1600895725197">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1818" height="259" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1593772014824" />
-    <state width="1818" height="259" key="GridCell.Tab.0.left" timestamp="1593772014824">
+    <state width="1818" height="322" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1600895725197" />
+    <state width="1818" height="322" key="GridCell.Tab.0.left" timestamp="1600895725197">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1818" height="259" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1593772014824" />
-    <state width="1818" height="259" key="GridCell.Tab.0.right" timestamp="1593772014824">
+    <state width="1818" height="322" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1600895725197" />
+    <state width="1818" height="322" key="GridCell.Tab.0.right" timestamp="1600895725198">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1818" height="259" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1593772014824" />
-    <state x="360" y="101" width="1271" height="912" key="SettingsEditor" timestamp="1593772234758">
+    <state width="1818" height="322" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1600895725198" />
+    <state width="1818" height="322" key="GridCell.Tab.1.bottom" timestamp="1600895725199">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="360" y="101" width="1271" height="912" key="SettingsEditor/72.27.1848.1053@72.27.1848.1053" timestamp="1593772234758" />
-    <state x="722" y="451" width="548" height="212" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593767125647">
+    <state width="1818" height="322" key="GridCell.Tab.1.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1600895725199" />
+    <state width="1818" height="322" key="GridCell.Tab.1.center" timestamp="1600895725198">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="722" y="451" width="548" height="212" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/72.27.1848.1053@72.27.1848.1053" timestamp="1593767125647" />
+    <state width="1818" height="322" key="GridCell.Tab.1.center/72.27.1848.1053@72.27.1848.1053" timestamp="1600895725198" />
+    <state width="1818" height="322" key="GridCell.Tab.1.left" timestamp="1600895725198">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1818" height="322" key="GridCell.Tab.1.left/72.27.1848.1053@72.27.1848.1053" timestamp="1600895725198" />
+    <state width="1818" height="322" key="GridCell.Tab.1.right" timestamp="1600895725199">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state width="1818" height="322" key="GridCell.Tab.1.right/72.27.1848.1053@72.27.1848.1053" timestamp="1600895725199" />
+    <state x="360" y="101" width="1271" height="912" key="SettingsEditor" timestamp="1593782646538">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="360" y="101" width="1271" height="912" key="SettingsEditor/72.27.1848.1053@72.27.1848.1053" timestamp="1593782646538" />
+    <state x="826" y="415" width="330" height="284" key="VCS.EditChangelistDialog" timestamp="1593785475548">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="826" y="415" width="330" height="284" key="VCS.EditChangelistDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1593785475548" />
+    <state x="491" y="226" width="1000" height="661" key="Vcs.Push.Dialog.v2" timestamp="1593775447520">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="491" y="226" width="1000" height="661" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1593775447520" />
+    <state x="722" y="451" width="591" height="219" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600895647438">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="722" y="451" width="591" height="219" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/72.27.1848.1053@72.27.1848.1053" timestamp="1600895647438" />
     <state x="575" y="45" width="840" height="1034" key="search.everywhere.popup" timestamp="1593769112616">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
