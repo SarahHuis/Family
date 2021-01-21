@@ -1,4 +1,6 @@
 import tkinter as tk
+#from tkinter import *
+#from tkinter.ttk import *
 
 def add_element_dict(dict, element):
         for i in element:
@@ -12,12 +14,16 @@ def add_to_tree(tree, node):
     tree[len(tree)+1] = node
 
 def handle_click():
-    #if text_Name.get("1.0","end-1c") and text_Parent.get("1.0","end-1c") and text_Child.get("1.0","end-1c") is None:
+    #if text_Name.get("1.0","end-1c") and text_Parent.get("1.0","end-1c") \
+    # and text_Child.get("1.0","end-1c") is None:
     entry = create_node(text_Name.get("1.0","end-1c"), text_Child.get("1.0","end-1c").split('\n'), \
     text_Parent.get("1.0","end-1c").split('\n'))
     print(entry)
     add_to_tree(tree, entry)
-
+    # Clear entry fields
+    text_Name.delete("1.0", "end")
+    text_Child.delete("1.0", "end")
+    text_Parent.delete("1.0", "end")
 
 
 
@@ -30,6 +36,7 @@ label_Child = tk.Label(text="Children")
 text_Child = tk.Text()
 label_Parent = tk.Label(text="Parents")
 text_Parent = tk.Text()
+Canvas_Tree = tk.Canvas()
 
 add_node_button = tk.Button(
     text = "New Person",
@@ -38,21 +45,18 @@ add_node_button = tk.Button(
     command = handle_click
 )
 
-add_node_button.pack()
-label_Name.pack()
-text_Name.pack()
-label_Child.pack()
-text_Child.pack()
-label_Parent.pack()
-text_Parent.pack()
+add_node_button.grid(row = 0, column = 1)
+label_Name.grid(row = 1, column = 1)
+text_Name.grid(row = 2, column = 1)
+label_Child.grid(row = 3, column = 1)
+text_Child.grid(row = 4, column = 1)
+label_Parent.grid(row = 5, column = 1)
+text_Parent.grid(row = 6, column = 1)
+Canvas_Tree.grid(row = 1, column = 2)
 
 
 
 
-
-#add_node_button.bind("<Button-1>", handle_click())
-
-print(tree)
 
 window.mainloop()
 
