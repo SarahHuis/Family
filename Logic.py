@@ -3,8 +3,11 @@
 # Guess as to why this happens:
 # The search function tries to find the first name it comes across anywhere in the dictionary, and not just in the 'name' key.
 
+# Trying out adding ID numbers.
+
 # Create tree
 tree = dict()
+last_ID = 0
 
 def add_element_dict(dict, element):
     for i in element:
@@ -12,7 +15,15 @@ def add_element_dict(dict, element):
 
 
 def create_node(name, child, parent):
-    node = {"name": name, "child": child, "parent": parent}
+    global last_ID
+    ID = last_ID + 1
+    last_ID = ID
+    ID = str(ID)
+    if len(ID) < 5:
+        ID = ID.zfill(5)
+    else:
+        print("Error in create_node. ID does not have a length between 1 and 5.")
+    node = {"ID": ID, "name": name, "child": child, "parent": parent}
     return node
 
 
@@ -53,12 +64,18 @@ def addParent(child, parent):
 
 
 def printTree():
-    return print(tree)
+    #return print(tree)
+    for mainkey, key in tree.items():
+        print(key)
 
 def selectPerson():
-    global person
+#    global person
+#    person = input("Enter Person: ")
+#    return person
     person = input("Enter Person: ")
-    return person
+    global ID
+    ID = findInTree(tree, person)
+    return tree[loc[0]]['ID']
 
 def printPerson():
     print(tree[findInTree(tree, person)[0]])
